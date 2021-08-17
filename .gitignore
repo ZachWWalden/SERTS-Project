@@ -5,3 +5,5 @@
 *.slo
 *.d
 *.axf
+*.axf
+*.o

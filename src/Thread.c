@@ -38,44 +38,83 @@ void Init_Thread (void) {
 // Thread function
 void Thread_1(void const *arg){
 	int i = 0;
-
+	int chooseEffect = 1;
 		while(1){
 			i = 0;
-			while(i<8)
+			if (chooseEffect == 0)
 			{
-				LED_On(LED_Red);
-				LED_Off(LED_Blue);
-				osDelay (1 + 20 * i);
-				LED_Off(LED_Red);
-				LED_On(LED_Orange);
-				osDelay (100 - 10 * i);
-				LED_On(LED_Green);
-				LED_Off(LED_Orange);
-				osDelay (1 + 20 * i);
-				LED_Off(LED_Green);
-				LED_On(LED_Blue);
-				osDelay (100 - 10 * i);
-				i++;
-				printf("i = %d\n", i);
+				while(i<8)
+				{
+					LED_On(LED_Red);
+					LED_Off(LED_Blue);
+					osDelay (1 + 20 * i);
+					LED_Off(LED_Red);
+					LED_On(LED_Orange);
+					osDelay (100 - 10 * i);
+					LED_On(LED_Green);
+					LED_Off(LED_Orange);
+					osDelay (1 + 20 * i);
+					LED_Off(LED_Green);
+					LED_On(LED_Blue);
+					osDelay (100 - 10 * i);
+					i++;
+					printf("i = %d\n", i);
+				}
+				while(i>0)
+				{
+					LED_On(LED_Red);
+					LED_Off(LED_Blue);
+					osDelay (1 + 20 * i);
+					LED_Off(LED_Red);
+					LED_On(LED_Orange);
+					osDelay (100 - 10 * i);
+					LED_On(LED_Green);
+					LED_Off(LED_Orange);
+					osDelay (1 + 20 * i);
+					LED_Off(LED_Green);
+					LED_On(LED_Blue);
+					osDelay (100 - 10 * i);
+					i--;
+					printf("i = %d\n", i);
+				}
 			}
-			while(i>0)
+			if (chooseEffect == 1)
 			{
-				LED_On(LED_Red);
-				LED_Off(LED_Blue);
-				osDelay (1 + 20 * i);
-				LED_Off(LED_Red);
-				LED_On(LED_Orange);
-				osDelay (100 - 10 * i);
-				LED_On(LED_Green);
-				LED_Off(LED_Orange);
-				osDelay (1 + 20 * i);
-				LED_Off(LED_Green);
-				LED_On(LED_Blue);
-				osDelay (100 - 10 * i);
-				i--;
-				printf("i = %d\n", i);
+				while(i<5)
+				{
+					//orange & green
+					LED_On(LED_Red);
+					LED_On(LED_Green);
+					LED_Off(LED_Blue);
+					LED_Off(LED_Orange);
+					osDelay(20 + 30 * i);
+					//green & blue
+					LED_On(LED_Blue);
+					LED_On(LED_Orange);
+					LED_Off(LED_Red);
+					LED_Off(LED_Green);
+					osDelay(20 + 30 * i);
+					i++;
+				}
+				osDelay(150);
+				while(i > 0)
+				{
+					LED_On(LED_Red);
+					LED_Off(LED_Blue);
+					osDelay (20 + 30 * 1);
+					LED_Off(LED_Red);
+					LED_On(LED_Orange);
+					osDelay (20 + 30 * 1);
+					LED_On(LED_Green);
+					LED_Off(LED_Orange);
+					osDelay (20 + 30 * 1);
+					LED_Off(LED_Green);
+					LED_On(LED_Blue);
+					osDelay (20 + 30 * 1);
+					i--;
+				}
+			}
 
-			}
 	}
 
 }
