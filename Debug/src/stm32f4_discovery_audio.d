@@ -4,7 +4,7 @@ src/stm32f4_discovery_audio.o: ..\src\stm32f4_discovery_audio.c \
   ..\src\stm32f4_discovery.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\MDK\Templates\Inc\stm32f4xx_hal_conf.h \
-  G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h \
+  G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
@@ -50,7 +50,7 @@ C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4x
 
 C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\MDK\Templates\Inc\stm32f4xx_hal_conf.h:
 
-G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h:
+G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h:
 
 C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h:
 

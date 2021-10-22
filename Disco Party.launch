@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.arm.debug.cmsis.launch">
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="2545200"/>
-        <mapEntry key="*list global low level symbols" value="11286650"/>
-        <mapEntry key="AddEventObserver" value="3613800"/>
-        <mapEntry key="compute execution mode" value="718750"/>
-        <mapEntry key="continue" value="26023000"/>
-        <mapEntry key="file" value="233593400"/>
-        <mapEntry key="get capabilities" value="127700"/>
-        <mapEntry key="get execution addresss" value="915400"/>
-        <mapEntry key="get source lines" value="1708700"/>
-        <mapEntry key="initialize command help" value="77424400"/>
-        <mapEntry key="list breakpoint options" value="3724600"/>
-        <mapEntry key="list breakpoints" value="1100500"/>
-        <mapEntry key="list instruction sets" value="2259800"/>
-        <mapEntry key="list signals" value="1830400"/>
-        <mapEntry key="list watchpoint options" value="6103300"/>
-        <mapEntry key="list watchpoints" value="1250800"/>
-        <mapEntry key="load" value="9874200"/>
-        <mapEntry key="run script" value="21382190000"/>
-        <mapEntry key="set CWD" value="7001300"/>
-        <mapEntry key="set debug-from" value="1181200"/>
-        <mapEntry key="start" value="323900400"/>
-        <mapEntry key="target reset" value="14543700"/>
-        <mapEntry key="waitForTargetToStop" value="96615500"/>
+        <mapEntry key="*Fetching Data Model" value="352713"/>
+        <mapEntry key="*list global low level symbols" value="6375210"/>
+        <mapEntry key="*loading values from target" value="40554360"/>
+        <mapEntry key="*updating variables" value="1368005"/>
+        <mapEntry key="AddEventObserver" value="336370"/>
+        <mapEntry key="Retrieving globals list" value="12420275"/>
+        <mapEntry key="break" value="6043250"/>
+        <mapEntry key="compute execution mode" value="351497"/>
+        <mapEntry key="continue" value="10615576"/>
+        <mapEntry key="file" value="110437030"/>
+        <mapEntry key="get capabilities" value="124786"/>
+        <mapEntry key="get execution addresss" value="473656"/>
+        <mapEntry key="get source lines" value="526234"/>
+        <mapEntry key="initialize command help" value="43709311"/>
+        <mapEntry key="list breakpoint options" value="150644"/>
+        <mapEntry key="list breakpoints" value="325036"/>
+        <mapEntry key="list instruction sets" value="130642"/>
+        <mapEntry key="list signals" value="194666"/>
+        <mapEntry key="list watchpoint options" value="200245"/>
+        <mapEntry key="list watchpoints" value="352083"/>
+        <mapEntry key="load" value="3363084"/>
+        <mapEntry key="next" value="109760400"/>
+        <mapEntry key="remove" value="6469375"/>
+        <mapEntry key="run script" value="25742878973"/>
+        <mapEntry key="set CWD" value="754204"/>
+        <mapEntry key="set breakpoint properties" value="8982050"/>
+        <mapEntry key="set debug-from" value="613788"/>
+        <mapEntry key="start" value="164486801"/>
+        <mapEntry key="target reset" value="17890966"/>
+        <mapEntry key="toggleBreakpoint" value="7904329"/>
+        <mapEntry key="waitForTargetToStop" value="30595497"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="10MHz"/>
     <stringAttribute key="CMSIS_DCORE" value="Cortex-M4"/>
@@ -70,13 +78,13 @@
     <stringAttribute key="CMSIS_PACK_NAME" value="STM32F4xx_DFP_STM32F407VGTx"/>
     <stringAttribute key="CMSIS_PACK_VERSION" value="2.15.0"/>
     <stringAttribute key="CMSIS_PNAME" value=""/>
-    <stringAttribute key="CMSIS_PREVIOUS_PRIMARY_FILE" value="G:\SERTS\SERTS Workspace\SERTS-Project\Debug\SERTS-Project.axf"/>
+    <stringAttribute key="CMSIS_PREVIOUS_PRIMARY_FILE" value="G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\Debug\SERTS-Project.axf"/>
     <stringAttribute key="CMSIS_PRIMARY_FILE" value="${workspace_loc:/SERTS-Project/Debug/SERTS-Project.axf}"/>
     <stringAttribute key="CMSIS_PROJ" value="SERTS-Project"/>
     <stringAttribute key="CMSIS_PROJECT_EXECUTABLE" value="${workspace_loc:/SERTS-Project/Debug/SERTS-Project.axf}"/>
     <stringAttribute key="CMSIS_RESET_TYPE" value="reset.system"/>
-    <stringAttribute key="CMSIS_SDF_DIR" value="G:\SERTS\SERTS Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx"/>
-    <stringAttribute key="CMSIS_SVD_DIR" value="G:\SERTS\SERTS Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\SVD\STM32F40x"/>
+    <stringAttribute key="CMSIS_SDF_DIR" value="G:\SERTS\Sterlonkinator 9000 Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx"/>
+    <stringAttribute key="CMSIS_SVD_DIR" value="G:\SERTS\Sterlonkinator 9000 Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\SVD\STM32F40x"/>
     <listAttribute key="FILES.ICE_DEBUG">
         <listEntry value="ON_DEMAND_LOAD"/>
         <listEntry value="ALSO_LOAD_SYMBOLS"/>
@@ -84,32 +92,46 @@
     <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
     <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.TYPE" value="SYMBOLS_FILE"/>
-    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.VALUE" value="G:\SERTS\SERTS Workspace\SERTS-Project\Debug\SERTS-Project.axf"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.VALUE" value="G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\Debug\SERTS-Project.axf"/>
     <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.1.TYPE" value="SFR_SEARCH_DIRS"/>
-    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.1.VALUE" value="G:\SERTS\SERTS Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\SVD\STM32F40x"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.1.VALUE" value="G:\SERTS\Sterlonkinator 9000 Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\SVD\STM32F40x"/>
     <intAttribute key="FILES.ICE_DEBUG.RESOURCES.COUNT" value="2"/>
     <stringAttribute key="FILES.SELECTED_DEBUG_OPEATION" value="ICE_DEBUG"/>
     <booleanAttribute key="KEY_COMMANDS_AFTER_CONNECT" value="false"/>
     <booleanAttribute key="KEY_COMMANDS_AS_CONNECT" value="true"/>
-    <stringAttribute key="KEY_COMMANDS_AS_CONNECT_TEXT" value="reset reset.system&#13;&#10;flash load-multiple &quot;G:\SERTS\SERTS Workspace\SERTS-Project\Debug\SERTS-Project.axf&quot;"/>
+    <stringAttribute key="KEY_COMMANDS_AS_CONNECT_TEXT" value="reset reset.system&#13;&#10;flash load-multiple &quot;G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\Debug\SERTS-Project.axf&quot;"/>
     <booleanAttribute key="SWD" value="true"/>
     <booleanAttribute key="SWJ" value="true"/>
-    <stringAttribute key="ULP_CONFIG" value="G:\SERTS\SERTS Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx\ulp-config.txt"/>
-    <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
+    <listAttribute key="TREE_NODE_PROPERTIES:debugger.view.VariableTreeView">
+        <listEntry value="NODE CACHE VERSION 1"/>
+        <listEntry value="GLOBALS:Globals:VALUE:G:/SERTS/Sterlonkinator 9000 Workspace/SERTS-Project/src/Thread.c::selectedFile"/>
+        <listEntry value="1"/>
+        <listEntry value="element formatter"/>
+        <listEntry value="Character"/>
+    </listAttribute>
+    <stringAttribute key="ULP_CONFIG" value="G:\SERTS\Sterlonkinator 9000 Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx\ulp-config.txt"/>
+    <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot; hardwareBreakpoint=&quot;yes&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x08006B9E&quot; debugFile=&quot;G:/SERTS/Sterlonkinator 9000 Workspace/SERTS-Project/src/Thread.c&quot; hostFile=&quot;G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\src\Thread.c&quot; line=&quot;171&quot; function=&quot;Process_Event&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x08006B9E&quot; debugFile=&quot;G:/SERTS/Sterlonkinator 9000 Workspace/SERTS-Project/src/Thread.c&quot; hostFile=&quot;G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\src\Thread.c&quot; line=&quot;171&quot; function=&quot;Process_Event&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
     <stringAttribute key="config_db_connection_keys" value="FILES.SELECTED_DEBUG_OPEATION rvi_address connection_type CMSIS_PROJ"/>
     <stringAttribute key="config_db_connection_type" value="Bare Metal Debug"/>
     <stringAttribute key="config_db_platform_name" value="STM32F4xx_DFP_STM32F407VGTx"/>
     <stringAttribute key="config_db_project_type" value="Bare Metal Debug"/>
     <stringAttribute key="config_db_project_type_id" value="BARE_METAL"/>
-    <stringAttribute key="config_file" value="G:\SERTS\SERTS Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx\platform.sdf"/>
+    <stringAttribute key="config_file" value="G:\SERTS\Sterlonkinator 9000 Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx\platform.sdf"/>
     <booleanAttribute key="connectOnly" value="false"/>
     <stringAttribute key="connection_type" value="ST-Link"/>
     <booleanAttribute key="debugSequenceLogging" value="false"/>
+    <stringAttribute key="debugger.view.VariableTreeView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;149&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;90&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;95&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;41&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;50&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;37&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;62&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;53&#9;-1&#9;true"/>
+    <listAttribute key="debugger.view.VariableTreeView:USER_ADDED_FILE_STATICS"/>
+    <listAttribute key="debugger.view.VariableTreeView:USER_ADDED_GLOBALS">
+        <listEntry value="&quot;src/Thread.c&quot;::selectedFile"/>
+    </listAttribute>
+    <booleanAttribute key="debugger.view.variable.DrawAsHex" value="false"/>
     <stringAttribute key="dtsl_config" value="DtslScript_DebugAndOnChipTrace"/>
-    <stringAttribute key="dtsl_config_script" value="G:\SERTS\SERTS Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx\dtsl_config_script.py"/>
+    <stringAttribute key="dtsl_config_script" value="G:\SERTS\Sterlonkinator 9000 Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx\dtsl_config_script.py"/>
     <stringAttribute key="dtsl_options_file" value=""/>
     <booleanAttribute key="holdReset" value="false"/>
     <intAttribute key="launch_configuration_version" value="3"/>
+    <stringAttribute key="os_extension_id" value="com.arm.debug.os.rtx"/>
     <booleanAttribute key="preReset" value="false"/>
     <stringAttribute key="rvi_address" value="57FF72066683485511340267"/>
     <stringAttribute key="stopAtExpression" value="main"/>

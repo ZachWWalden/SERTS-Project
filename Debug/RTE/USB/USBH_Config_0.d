@@ -1,6 +1,6 @@
 RTE/USB/USBH_Config_0.o: ..\RTE\USB\USBH_Config_0.c \
-  G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h \
-  G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\USB\USBH_Config_MSC.h \
+  G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h \
+  G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\USB\USBH_Config_MSC.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\usbh_config.h \
   G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\stdint.h \
   G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\stdbool.h \
@@ -28,9 +28,9 @@ RTE/USB/USBH_Config_0.o: ..\RTE\USB\USBH_Config_0.c \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\usbh_config_hc_0.c \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\usbh_cmsis_rtos1.c
 
-G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h:
+G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h:
 
-G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\USB\USBH_Config_MSC.h:
+G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\USB\USBH_Config_MSC.h:
 
 C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\usbh_config.h:
 

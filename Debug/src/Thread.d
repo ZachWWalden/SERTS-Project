@@ -11,7 +11,7 @@ src/Thread.o: ..\src\Thread.c \
   G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\stdbool.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\rl_usb.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\usb_os.h \
-  G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h \
+  G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\usb_compiler.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h \
@@ -52,39 +52,7 @@ src/Thread.o: ..\src\Thread.c \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h \
   ..\src\stm32f4_discovery.h ..\src\stm32f4_discovery_audio.h \
-  ..\src\cs43l22.h ..\src\audio.h ..\src\pdm_filter.h \
-  G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\math.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h \
-  G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\float.h \
-  G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\limits.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_memory.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\none.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\utils.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\basic_math_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_memory.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\none.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\utils.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\interpolation_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\bayes_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\statistics_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\basic_math_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\fast_math_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\matrix_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\complex_math_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\statistics_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\controller_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\support_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\distance_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\svm_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\svm_defines.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\fast_math_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\transform_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\complex_math_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\filtering_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\support_functions.h \
-  C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\quaternion_math_functions.h
+  ..\src\cs43l22.h ..\src\audio.h ..\src\pdm_filter.h
 
 C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC\cmsis_os.h:
 
@@ -110,7 +78,7 @@ C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\rl_
 
 C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\usb_os.h:
 
-G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h:
+G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h:
 
 C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\USB\Include\usb_compiler.h:
 
@@ -199,67 +167,3 @@ C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4x
 ..\src\audio.h:
 
 ..\src\pdm_filter.h:
-
-G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\math.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h:
-
-G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\float.h:
-
-G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\limits.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_memory.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\none.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\utils.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\basic_math_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_memory.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\none.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\utils.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\interpolation_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\bayes_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\statistics_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\basic_math_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\fast_math_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\matrix_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\complex_math_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\statistics_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\controller_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\support_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\distance_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\svm_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\svm_defines.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\fast_math_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\transform_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\complex_math_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\filtering_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\support_functions.h:
-
-C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\quaternion_math_functions.h:

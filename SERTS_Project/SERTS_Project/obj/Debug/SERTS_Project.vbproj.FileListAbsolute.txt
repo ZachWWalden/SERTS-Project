@@ -1,0 +1,24 @@
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\bin\Debug\SERTS_Project.exe.config
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\bin\Debug\SERTS_Project.exe
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\bin\Debug\SERTS_Project.pdb
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\bin\Debug\SERTS_Project.xml
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.vbprojAssemblyReference.cache
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.Form1.resources
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.Resources.resources
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.vbproj.GenerateResource.cache
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.vbproj.CoreCompileInputs.cache
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.exe
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.xml
+C:\Users\mlram\source\repos\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.pdb
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\bin\Debug\SERTS_Project.exe.config
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\bin\Debug\SERTS_Project.exe
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\bin\Debug\SERTS_Project.pdb
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\bin\Debug\SERTS_Project.xml
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.vbprojAssemblyReference.cache
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.Form1.resources
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.Resources.resources
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.vbproj.GenerateResource.cache
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.vbproj.CoreCompileInputs.cache
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.exe
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.xml
+G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\SERTS_Project\SERTS_Project\obj\Debug\SERTS_Project.pdb

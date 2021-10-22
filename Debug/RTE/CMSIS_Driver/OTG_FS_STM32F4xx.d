@@ -3,7 +3,7 @@ RTE/CMSIS_Driver/OTG_FS_STM32F4xx.o: \
   G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\stdint.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\MDK\Templates\Inc\stm32f4xx_hal_conf.h \
-  G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h \
+  G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
@@ -40,7 +40,7 @@ RTE/CMSIS_Driver/OTG_FS_STM32F4xx.o: \
   C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include\Driver_USBD.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\CMSIS\Driver\OTG_FS_STM32F4xx.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h \
-  G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\Device\STM32F407VGTx\RTE_Device.h
+  G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\Device\STM32F407VGTx\RTE_Device.h
 
 G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\stdint.h:
 
@@ -48,7 +48,7 @@ C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4x
 
 C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\MDK\Templates\Inc\stm32f4xx_hal_conf.h:
 
-G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h:
+G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h:
 
 C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h:
 
@@ -122,4 +122,4 @@ C:\Users\Zach\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\CMSIS\Driver\OTG
 
 C:\Users\Zach\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h:
 
-G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\Device\STM32F407VGTx\RTE_Device.h:
+G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\Device\STM32F407VGTx\RTE_Device.h:

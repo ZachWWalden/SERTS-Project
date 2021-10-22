@@ -1,6 +1,6 @@
 RTE/File_System/FS_Config.o: ..\RTE\File_System\FS_Config.c \
-  G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h \
-  G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\File_System\FS_Config_USB_0.h \
+  G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h \
+  G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\File_System\FS_Config_USB_0.h \
   C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\FileSystem\Include\fs_config.h \
   G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\string.h \
   G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\rt_sys.h \
@@ -14,9 +14,9 @@ RTE/File_System/FS_Config.o: ..\RTE\File_System\FS_Config.c \
   G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\stddef.h \
   G:\Program\ Files\ARM\ Development\ Studio\sw\ARMCompiler6.16\bin\..\include\stdio.h
 
-G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\RTE_Components.h:
+G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\RTE_Components.h:
 
-G:\SERTS\SERTS\ Workspace\SERTS-Project\RTE\File_System\FS_Config_USB_0.h:
+G:\SERTS\Sterlonkinator\ 9000\ Workspace\SERTS-Project\RTE\File_System\FS_Config_USB_0.h:
 
 C:\Users\Zach\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\FileSystem\Include\fs_config.h:
 
