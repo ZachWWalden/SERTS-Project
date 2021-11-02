@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.arm.debug.cmsis.launch">
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="352713"/>
-        <mapEntry key="*list global low level symbols" value="6375210"/>
-        <mapEntry key="*loading values from target" value="40554360"/>
-        <mapEntry key="*updating variables" value="1368005"/>
-        <mapEntry key="AddEventObserver" value="336370"/>
-        <mapEntry key="Retrieving globals list" value="12420275"/>
-        <mapEntry key="break" value="6043250"/>
-        <mapEntry key="compute execution mode" value="351497"/>
-        <mapEntry key="continue" value="10615576"/>
-        <mapEntry key="file" value="110437030"/>
-        <mapEntry key="get capabilities" value="124786"/>
-        <mapEntry key="get execution addresss" value="473656"/>
-        <mapEntry key="get source lines" value="526234"/>
-        <mapEntry key="initialize command help" value="43709311"/>
-        <mapEntry key="list breakpoint options" value="150644"/>
-        <mapEntry key="list breakpoints" value="325036"/>
-        <mapEntry key="list instruction sets" value="130642"/>
-        <mapEntry key="list signals" value="194666"/>
-        <mapEntry key="list watchpoint options" value="200245"/>
-        <mapEntry key="list watchpoints" value="352083"/>
-        <mapEntry key="load" value="3363084"/>
+        <mapEntry key="*Fetching Data Model" value="172621"/>
+        <mapEntry key="*list global low level symbols" value="6679138"/>
+        <mapEntry key="*loading values from target" value="59508975"/>
+        <mapEntry key="*updating variables" value="6019763"/>
+        <mapEntry key="AddEventObserver" value="374754"/>
+        <mapEntry key="Retrieving globals list" value="16249637"/>
+        <mapEntry key="break" value="5551276"/>
+        <mapEntry key="compute execution mode" value="351207"/>
+        <mapEntry key="continue" value="9997673"/>
+        <mapEntry key="file" value="132651613"/>
+        <mapEntry key="get capabilities" value="193267"/>
+        <mapEntry key="get execution addresss" value="609282"/>
+        <mapEntry key="get source lines" value="537702"/>
+        <mapEntry key="initialize command help" value="45499611"/>
+        <mapEntry key="list breakpoint options" value="153930"/>
+        <mapEntry key="list breakpoints" value="335681"/>
+        <mapEntry key="list instruction sets" value="138201"/>
+        <mapEntry key="list signals" value="858429"/>
+        <mapEntry key="list watchpoint options" value="282345"/>
+        <mapEntry key="list watchpoints" value="313175"/>
+        <mapEntry key="load" value="10913960"/>
         <mapEntry key="next" value="109760400"/>
-        <mapEntry key="remove" value="6469375"/>
-        <mapEntry key="run script" value="25742878973"/>
-        <mapEntry key="set CWD" value="754204"/>
-        <mapEntry key="set breakpoint properties" value="8982050"/>
-        <mapEntry key="set debug-from" value="613788"/>
-        <mapEntry key="start" value="164486801"/>
-        <mapEntry key="target reset" value="17890966"/>
-        <mapEntry key="toggleBreakpoint" value="7904329"/>
-        <mapEntry key="waitForTargetToStop" value="30595497"/>
+        <mapEntry key="remove" value="4867760"/>
+        <mapEntry key="run script" value="24985390066"/>
+        <mapEntry key="set CWD" value="1004647"/>
+        <mapEntry key="set breakpoint properties" value="8638273"/>
+        <mapEntry key="set debug-from" value="1526863"/>
+        <mapEntry key="start" value="256895204"/>
+        <mapEntry key="target reset" value="18563862"/>
+        <mapEntry key="toggleBreakpoint" value="15917966"/>
+        <mapEntry key="waitForTargetToStop" value="26393603"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="10MHz"/>
     <stringAttribute key="CMSIS_DCORE" value="Cortex-M4"/>
@@ -110,7 +110,7 @@
         <listEntry value="Character"/>
     </listAttribute>
     <stringAttribute key="ULP_CONFIG" value="G:\SERTS\Sterlonkinator 9000 Workspace\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\STM32F4xx_DFP_STM32F407VGTx\ulp-config.txt"/>
-    <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot; hardwareBreakpoint=&quot;yes&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x08006B9E&quot; debugFile=&quot;G:/SERTS/Sterlonkinator 9000 Workspace/SERTS-Project/src/Thread.c&quot; hostFile=&quot;G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\src\Thread.c&quot; line=&quot;171&quot; function=&quot;Process_Event&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x08006B9E&quot; debugFile=&quot;G:/SERTS/Sterlonkinator 9000 Workspace/SERTS-Project/src/Thread.c&quot; hostFile=&quot;G:\SERTS\Sterlonkinator 9000 Workspace\SERTS-Project\src\Thread.c&quot; line=&quot;171&quot; function=&quot;Process_Event&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
+    <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
     <stringAttribute key="config_db_connection_keys" value="FILES.SELECTED_DEBUG_OPEATION rvi_address connection_type CMSIS_PROJ"/>
     <stringAttribute key="config_db_connection_type" value="Bare Metal Debug"/>
     <stringAttribute key="config_db_platform_name" value="STM32F4xx_DFP_STM32F407VGTx"/>

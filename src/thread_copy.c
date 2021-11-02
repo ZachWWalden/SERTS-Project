@@ -79,11 +79,11 @@ osThreadDef (Fs, osPriorityNormal, 1, 0); // thread object
 
 void Control (void const *argument); // thread function
 osThreadId tid1; // thread id
-osThreadDef (Control, osPriorityNormal, 1, 0); // thread object
+osThreadDef (Control, osPriorityAboveNormal, 1, 0); // thread object
 
 void Rx_Command (void const *argument); // thread function
 osThreadId tid2; // thread id
-osThreadDef (Rx_Command, osPriorityNormal, 1, 0); // thread object
+osThreadDef (Rx_Command, osPriorityAboveNormal, 1, 0); // thread object
 
 
 void Process_Event(uint16_t event);
@@ -197,7 +197,7 @@ void Process_Event(uint16_t event)
     	if(event == ResumePlaying)
     	{
     		Current_State = Playing;
-    		osMessagePut(mid_Command_FsQueue, ResumePlaying,osWaitForever);
+    		osMessagePut(mid_PRQueue, ResumePlaying,osWaitForever);
     	}
     	break;
     default:
@@ -327,8 +327,6 @@ void Fs (void const *argument){
 
 		uint8_t initFlag = 0;
 
-		osEvent evt;
-
 		LED_On(LED_Green);
 		ustatus = USBH_Initialize (drivenum); // initialize the USB Host
 		if (ustatus == usbOK){
@@ -348,100 +346,140 @@ void Fs (void const *argument){
 				// handle the error, fmount didn't work
 			} // end if
 			// file system and drive are good to go
-			rtrn = BSP_AUDIO_OUT_Init(OUTPUT_DEVICE_AUTO, 75, 44100);
-			if (rtrn == AUDIO_ERROR)
-			{
-				return;
-			}
-
+			osEvent evt;
 			while(1)
 			{
 			evt = osMessageGet (mid_Command_FsQueue, osWaitForever); // receive command
 			if (evt.status == osEventMessage)
 			{
-				switch(evt.value.v) {
-				case SendFiles:{
-				//Send the file list
-					info.fileID = 0;
-					UART_send("2\n",2);
-					while(ffind ("U0:*.wav", &info) == fsOK)
-					{
-						UART_send(info.name, strlen(info.name));
-						UART_send("\n", 1);
-					}
-					UART_send("3\n",2);
-					osMessagePut (mid_CMDQueue, SendComplete, osWaitForever);
+				if(evt.value.v == SendFiles)
+				{
+				    		info.fileID = 0;
+				    	  	UART_send("2\n",2);
+				    	  	while(ffind ("U0:*.wav", &info) == fsOK)
+				    	  	{
+				    	  			UART_send(info.name, strlen(info.name));
+				    	  			UART_send("\n", 1);
+				    	  	}
+				    	  	UART_send("3\n",2);
+				    	  	osMessagePut (mid_CMDQueue, SendComplete, osWaitForever);
 				}
-				break;
-				case PlayFile:{
-				//Open the song file
-					f = fopen (selectedFile,"r");// open a file on the USB device
-					if (f != NULL)
-					{
-						fread((void *)&header, sizeof(header), 1, f);
-					} // end if file opened
-					curBuffPtr = Audio_Buffer;
-					numRead = fread((void*)&Audio_Buffer, sizeof(int16_t), BUF_LEN, f);
-					if(numRead < BUF_LEN)
-					{
-						fclose(f);
-					}
-					curBuffPtr = Audio_Buffer1;
-					buffNum = 1;
-				//Read a buffer of data
-				BSP_AUDIO_OUT_SetMute(AUDIO_MUTE_OFF);
-				// Start playing the buffer
-				BSP_AUDIO_OUT_Play((uint16_t *)Audio_Buffer, BUF_LEN*2);
-				}
-				// NOTE: No break here so it will continue with the next sections too
-				case ResumePlaying:
-				// if we are not at the beginning of a song play
-				if(evt.value.v == ResumePlaying){
-				BSP_AUDIO_OUT_SetMute(AUDIO_MUTE_OFF);
-				BSP_AUDIO_OUT_ChangeBuffer((uint16_t*)Audio_Buffer1, BUF_LEN);
-				}
-				while(numRead == BUF_LEN){
-				//Read new buffer of data and send to DMA
-					numRead = fread((void*)curBuffPtr, sizeof(int16_t), BUF_LEN, f);
-					osMessagePut(mid_DMAQueue, buffNum, osWaitForever); //possibly change osWaitForever to 0
-					//block on semaphore
-					osSemaphoreWait(dma_semaphore_id, osWaitForever);
-					//switch buffers
-					if(buffNum == 1)
-					{
-						curBuffPtr = Audio_Buffer;
-						buffNum = 0;
-					}
-					else
-					{
-						curBuffPtr = Audio_Buffer1;
-						buffNum = 1;
-					}
+				else if (evt.value.v == PlayFile)
+				{
+							f = fopen (selectedFile,"r");// open a file on the USB device
+							if (f != NULL)
+							{
+								fread((void *)&header, sizeof(header), 1, f);
+							} // end if file opened
+							if(!initFlag)
+							{
+								//call BSP_AUDIO_OUT_Init()
+								rtrn = BSP_AUDIO_OUT_Init(OUTPUT_DEVICE_AUTO, 75, header.sample_rate);
+								if (rtrn == AUDIO_ERROR)
+								{
+									return;
+								}
+							}
 
-				//Read a new message WITH ZERO DELAY
-					evt = osMessageGet (mid_PRQueue, 0); // receive command
-				if (evt.status == osEventMessage) { // check for valid message
-				if(evt.value.v == PausePlaying){
-				BSP_AUDIO_OUT_SetMute(AUDIO_MUTE_ON);
-				break; // This is not good programming but works
-				}
-				if(evt.value.v == StopPlaying){
-				//the read buffer length to zero; // this will stop all playback
-				numRead = 0;
-				}
-				} // end new message
-				if(numRead < BUF_LEN){
-				// end of song
-				//Send SongDone to state machine
-				BSP_AUDIO_OUT_SetMute(AUDIO_MUTE_ON);
-				fclose (f); // close the file
-				osMessagePut (mid_CMDQueue, PlayingFinished, osWaitForever);
-				}
-				}// end while(the read buffer length is BUF_LEN from previous read)
-				break;
-				} // end of switch
-				} // switch(message)
-			}
+							//read in first buffer
+							curBuffPtr = Audio_Buffer;
+							numRead = fread((void*)&Audio_Buffer, sizeof(int16_t), BUF_LEN, f);
+							if(numRead < BUF_LEN)
+							{
+								fclose(f);
+								f = NULL;
+							}
+
+						 	curBuffPtr = Audio_Buffer1;
+						 	buffNum = 1;
+						 	//set the sample frequency
+						 	/*if(header.sample_rate == 44100)
+						 	{
+						 		BSP_AUDIO_OUT_SetFrequency(header.sample_rate);
+						 	}*/
+							// Start the audio player, size is number of bytes so mult. by 2
+						 	if(!initFlag)
+						 	{
+						 		BSP_AUDIO_OUT_Play((uint16_t *)Audio_Buffer, BUF_LEN*2);
+						 		initFlag = 1;
+						 	}
+						 	else
+						 	{
+						 		BSP_AUDIO_OUT_SetMute(AUDIO_MUTE_OFF);
+						 		BSP_AUDIO_OUT_ChangeBuffer((uint16_t *)Audio_Buffer, BUF_LEN);
+						 	}
+							//continuously switch
+							while(f != NULL)
+							{
+								evt = osMessageGet (mid_PRQueue, 0); // receive command
+								if (evt.status == osEventMessage)
+								{
+									if(evt.value.v == PausePlaying)
+									{
+										playFag = 0;
+										BSP_AUDIO_OUT_SetMute(AUDIO_MUTE_ON);
+										//BSP_AUDIO_OUT_Pause();
+									}
+									else if(evt.value.v == ResumePlaying)
+									{
+										playFag = 1;
+										//BSP_AUDIO_OUT_Resume();
+										BSP_AUDIO_OUT_SetMute(AUDIO_MUTE_OFF);
+									}
+									else
+									{
+										playFag = 0;
+										BSP_AUDIO_OUT_SetMute(AUDIO_MUTE_ON);
+										fclose(f);
+										f = NULL;
+										//BSP_AUDIO_OUT_Stop(CODEC_PDWN_HW);
+									}
+								}
+								if(playFag)
+								{
+									numRead = fread((void*)curBuffPtr, sizeof(int16_t), BUF_LEN, f);
+									if(numRead < BUF_LEN)
+									{
+										fclose(f);
+										f = NULL;
+										playFag = 2;
+										//BSP_AUDIO_OUT_Stop(CODEC_PDWN_HW);
+										//osMessagePut(mid_CMDQueue, 2, osWaitForever); //possibly change osWaitForever to 0
+
+									}
+									//send next buffer message
+									osMessagePut(mid_DMAQueue, buffNum, osWaitForever); //possibly change osWaitForever to 0
+									//block on semaphore
+									osSemaphoreWait(dma_semaphore_id, osWaitForever);
+									//switch buffers
+									if(buffNum == 1)
+									{
+										curBuffPtr = Audio_Buffer;
+										buffNum = 0;
+									}
+									else
+									{
+										curBuffPtr = Audio_Buffer1;
+										buffNum = 1;
+									}
+									if(playFag == 2)
+									{
+										osMessagePut (mid_CMDQueue, PlayingFinished, osWaitForever);
+									}
+								}
+								else if(!playFag)
+								{
+									/*//send next buffer message
+									osMessagePut(mid_DMAQueue, 1, osWaitForever); //possibly change osWaitForever to 0
+									//block on semaphore
+									osSemaphoreWait(dma_semaphore_id, osWaitForever);*/
+
+								}
+							}
+						 	osMessagePut (mid_CMDQueue, PlayingFinished, osWaitForever);
+			  	  }
 		} // end if USBH_Initialize
-
+		}
+		LED_Off(LED_Green);
+		}
 }
